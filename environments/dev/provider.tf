@@ -5,6 +5,15 @@ terraform {
       version = "5.93.0"
     }
   }
+
+  backend "remote" {
+    hostname     = "app.terraform.io"
+    organization = ""
+
+    workspaces {
+      name = ""
+    }
+  }
 }
 
 provider "aws" {
