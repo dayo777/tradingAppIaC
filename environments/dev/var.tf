@@ -7,11 +7,13 @@ variable "main_region" {
 variable "aws_access_key" {
   description = "AWS access key credential"
   type = string
+  sensitive = true
 }
 
 variable "aws_secret_key" {
   description = "AWS secret key credential"
   type = string
+  sensitive = true
 }
 
 variable "s3_trading_app_name" {
